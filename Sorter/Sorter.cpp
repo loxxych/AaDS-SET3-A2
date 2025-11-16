@@ -4,6 +4,8 @@
 
 #include "Sorter.h"
 
+#define THRESHOLD 15
+
 void Sorter::insertionSort(vector<int>& arr, int l, int r) {
     for (int i = l + 1; i <= r; ++i) {
         int key = arr[i];
@@ -63,7 +65,7 @@ void Sorter::hybridMergeSort(vector<int>& arr, int left, int right) {
     if (left >= right)
         return;
 
-    if ((right - left + 1) <= 15) {
+    if ((right - left + 1) <= THRESHOLD) {
         insertionSort(arr, left, right);
     } else {
         int mid = left + (right - left) / 2;

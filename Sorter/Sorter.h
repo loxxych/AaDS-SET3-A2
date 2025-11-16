@@ -5,7 +5,6 @@
 #ifndef SET3_SORTER_H
 #define SET3_SORTER_H
 
-#include <algorithm>
 #include <vector>
 
 using namespace std;

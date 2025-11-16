@@ -9,4 +9,5 @@ add_executable(SET3_A2 test.cpp
         ArrayGenerator/ArrayGenerator.cpp
         ArrayGenerator/ArrayGenerator.h
         Sorter/Sorter.cpp
-        Sorter/Sorter.h)
+        Sorter/Sorter.h
+        test.cpp)
